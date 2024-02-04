@@ -1,17 +1,56 @@
-.container{
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(5, 5, 5);
+}
+
+.header h1 {
+    color: rgb(218, 30, 218);
+}
+
+.header h1, .header span {
+    margin: 0;
+}
+
+.header-right a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1caaca;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-right a:hover {
+    background-color: #625ac4;
+}
+
+.header-right span {
+    margin-right: 10px; /* Add space between your name and GitHub button */
+}
+.container p {
+    color: white; /* Set the color of the loading text to white */
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    margin-top: 250px;
+    margin: 100px auto 50px auto; /* Center the container horizontally and move it down from the top */
+    max-width: 800px;
+    padding: 0 20px;
     background: #625ac4;
-    width: 800px;
     border-radius: 15px;
 }
-.quote{
-    padding: 60px 110px;
+
+
+.quote {
+    padding: 40px 20px;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -27,19 +66,46 @@
     align-items: center;
     margin: 30px 0px;
 }
-.author{
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-}
-.icons{
-    display: flex;
-    gap: 40px;
 
+.author {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
 }
 
 .icons img {
-    width: 36px; /* Adjust the width of the icons */
-    height: 36px; /* Adjust the height of the icons */
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .line{
+        width: 580px;
+    }
+    .bottom{
+
+        margin: 25px 0px;
+    }
+    
+    .quote {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
