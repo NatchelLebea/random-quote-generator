@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px auto 50px auto; /* Center the container horizontally and move it down from the top */
+    margin: 100px auto 150px auto; /* Center the container horizontally and move it down from the top */
     max-width: 800px;
     padding: 0 20px;
     background: #625ac4;
@@ -88,7 +88,7 @@
 /* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
     .line{
-        width: 580px;
+        width: 400px;
     }
     .bottom{
 
